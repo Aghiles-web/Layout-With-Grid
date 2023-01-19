@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "head head head"
+    "div2 div2 div3"
+    "div4 div5 div5"
+    "div6 div5 div5"
+    "div7 div5 div5"
+    "fot fot fot";
+    gap: 10px 10px ;
+  }
+  .div{
+    background-color: rgb(21, 147, 219);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+  }
+  .one{
+    grid-area: head;
+
+  }
+  .two{
+    grid-area: div2;
+
+  }
+  .three{
+    grid-area: div3;
+  }
+  .four{
+grid-area: div4;
+  }
+  .five{
+    grid-area: div5;
+
+  }
+  .six{
+    grid-area: div6;
+
+  }
+  .seven{
+    grid-area: fot;
+
+  }
+  .eight{
+    background-color: rgb(21, 147, 219);
+
+  }
